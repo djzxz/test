@@ -19,7 +19,7 @@ void mgos_PWMServoDriver_begin(Adafruit_PWMServoDriver *ssd) {
 }
 
 void mgos_PWMServoDriver_setPWMFreq(Adafruit_PWMServoDriver *ssd, int freq) {
-  if (ssd == nullptr) return;
+  //if (ssd == nullptr) return;
   //ssd->setPWMFreq(freq);
   //round(ssd->setPWMFreq(freq / 100.0) * 100.0);
 }
