@@ -42,10 +42,10 @@ void Adafruit_PWMServoDriver::reset(void) {
  write8(PCA9685_MODE1, 0x0);
 }
 
-void Adafruit_PWMServoDriver::setPWMFreq(float freq) {
+void Adafruit_PWMServoDriver::setPWMFreq(int freq) {
   //Serial.print("Attempting to set freq ");
   //Serial.println(freq);
-  freq *= 0.9;  // Correct for overshoot in the frequency setting (see issue #11).
+  (float)freq *= 0.9;  // Correct for overshoot in the frequency setting (see issue #11).
   float prescaleval = 25000000;
   prescaleval /= 4096;
   prescaleval /= freq;
