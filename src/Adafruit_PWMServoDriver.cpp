@@ -65,7 +65,7 @@ void Adafruit_PWMServoDriver::setPWMFreq(int freq) {
   write8(PCA9685_PRESCALE, prescale); // set the prescaler
   write8(PCA9685_MODE1, 0x80);
   //delay(5);
-  //write8(PCA9685_MODE1, 0x04);  //  This sets the MODE1 register to turn on auto increment.
+  write8(PCA9685_MODE1, 0x04);  //  This sets the MODE1 register to turn on auto increment.
                                           // This is why the beginTransmission below was not working.
   //  Serial.print("Mode now 0x"); Serial.println(read8(PCA9685_MODE1), HEX);
 }
