@@ -47,7 +47,7 @@ void Adafruit_PWMServoDriver::setPWMFreq(int freq) {
   //Serial.println(freq);
   float buff = freq * 0.9;
   //(float)freq *= 0.9;  // Correct for overshoot in the frequency setting (see issue #11).
-  float prescaleval = 16000000;
+  float prescaleval = 160000000;
   prescaleval /= 4096;
   prescaleval /= buff;
   prescaleval -= 1;
