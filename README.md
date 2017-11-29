@@ -1,12 +1,38 @@
 
-Solarized
+Arduino Adafruit PWM servo library
 =========
+#Description
+16-Channel 12-bit PWM/Servo Driver – I2C interface – PCA9685 Module lets you add more IOs to your microcontroller boards (such as Arduino Boards, Raspberry Pi Boards and more). The Module has chainable I2C interface meaning for even more IOs more boards can be daisy chained. Its and excellent product for Robots that require lots of Servo motors to control using single microcontroller.
 
-## Precision colors for machines and people
+## This is a library for our Adafruit 16-channel PWM & Servo driver ---> https://www.adafruit.com/product/815
 
 ![alt text](http://www.robotpark.com/image/cache/data/PRO/91098/91098-Adafruit-16-Channel-12-bit-PWM-Servo-Driver_Pic02-700x700.jpg)
 
+### PCA9685 Highlights from datasheet
 
+* **16 individually controlled channels
+* **12bit (4096 steps) registers both for on and off time
+* **1MHz fast I2C bus interface with 30mA high drive capability on SDA output for driving high capacitive buses
+* **40MHz to 1000MHz PWM frequency for all LEDs with internal 25MHz oscillator
+* **Operating power supply voltage range of 2.3 V to 5.5 V
+* **Six hardware address pins allow up to 62 devices on the same bus
+
+### Other Applications
+
+*   **Mutt** e-mail client also by [me] (*just* the Mutt colorscheme is
+    [available here][Mutt Repository])
+
+### Palettes
+
+* **Adobe Photoshop** Palette (inc. L\*a\*b values)
+* **Apple Color Picker** Palettes
+* **GIMP** Palette
+
+Don't see the application you want to use it in? Download the palettes (or pull
+the values from the table below) and create your own. Submit it back and I'll
+happily note the contribution and include it on this page.  See also the
+[Usage & Development](#usage-development) section below for details on the
+specific values to be used in different contexts.
 
 
 ---
