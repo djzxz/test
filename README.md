@@ -1,5 +1,5 @@
 
-Arduino Adafruit PWM servo library
+Arduino Adafruit PWM servo library for Mongoose OS
 =========
 ## Description
 
