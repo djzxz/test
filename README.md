@@ -30,4 +30,4 @@ Arduino Adafruit PWM servo library
 * Board 1: Address = 0x41 Offset = binary 00001 (bridge A0 ) 
 * Board 2: Address = 0x42 Offset = binary 00010 (bridge A1) 
 * Board 3: Address = 0x43 Offset = binary 00011 (bridge A0 & A1) 
-
+* ...
