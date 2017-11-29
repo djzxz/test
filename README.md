@@ -1,21 +1,20 @@
 
 Arduino Adafruit PWM servo library
 =========
-#Description
+##Description
 16-Channel 12-bit PWM/Servo Driver – I2C interface – PCA9685 Module lets you add more IOs to your microcontroller boards (such as Arduino Boards, Raspberry Pi Boards and more). The Module has chainable I2C interface meaning for even more IOs more boards can be daisy chained. Its and excellent product for Robots that require lots of Servo motors to control using single microcontroller.
-
-## This is a library for our Adafruit 16-channel PWM & Servo driver ---> https://www.adafruit.com/product/815
+---> https://www.adafruit.com/product/815
 
 ![alt text](http://www.robotpark.com/image/cache/data/PRO/91098/91098-Adafruit-16-Channel-12-bit-PWM-Servo-Driver_Pic02-700x700.jpg)
 
 ### PCA9685 Highlights from datasheet
 
-* **16 individually controlled channels
-* **12bit (4096 steps) registers both for on and off time
-* **1MHz fast I2C bus interface with 30mA high drive capability on SDA output for driving high capacitive buses
-* **40MHz to 1000MHz PWM frequency for all LEDs with internal 25MHz oscillator
-* **Operating power supply voltage range of 2.3 V to 5.5 V
-* **Six hardware address pins allow up to 62 devices on the same bus
+* 16 individually controlled channels
+* 12bit (4096 steps) registers both for on and off time
+* 1MHz fast I2C bus interface with 30mA high drive capability on SDA output for driving high capacitive buses
+* 40MHz to 1000MHz PWM frequency for all LEDs with internal 25MHz oscillator
+* Operating power supply voltage range of 2.3 V to 5.5 V
+* Six hardware address pins allow up to 62 devices on the same bus
 
 ### Other Applications
 
