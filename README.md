@@ -24,3 +24,10 @@ Arduino Adafruit PWM servo library
 * Operating Voltage: 2.3V – 5.5V
 * Solder jumpers for the 6 address select pins
 * I2C 7-bit address Range: between 0x40-0x7F, selectable with jumpers
+
+### Slave address
+Board 0: Address = 0x40 Offset = binary 00000 (no jumpers required) 
+Board 1: Address = 0x41 Offset = binary 00001 (bridge A0 ) 
+Board 2: Address = 0x42 Offset = binary 00010 (bridge A1) 
+Board 3: Address = 0x43 Offset = binary 00011 (bridge A0 & A1) 
+
