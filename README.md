@@ -1,5 +1,5 @@
 
-Arduino DS3231 High Precision Real Time library for Mongoose OS
+Arduino DS3231 High Precision Real Time Clock (RTC) library for Mongoose OS
 =========
 
 Tested and works on esp8266/esp32
