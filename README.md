@@ -5,7 +5,7 @@ Arduino Adafruit ADS1015 12-BiT/ADS1115 16-Bit ADC - 4 Channel with Programmable
 Tested and works on esp8266/esp32
 
 ## Description
-Analog-to-digital converter or when you want a higher-precision ADC. 
+Analog-to-digital converter or higher-precision ADC. 
 
 |           | precision | samples\sec |
 | :---      |     :---: | :---        |
