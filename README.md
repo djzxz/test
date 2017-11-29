@@ -1,34 +1,32 @@
 
-Arduino Adafruit - 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685 library for Mongoose OS
+Arduino Adafruit - ADS1015 12-Bit ADC/ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier library for Mongoose OS
 =========
 
 Tested and works on esp8266/esp32
 ## Description
+Analog-to-digital converter or when you want a higher-precision ADC,
+* ADS1015 provides 12-bit precision at 3300 samples/second
+* ADS1115 provides 16-bit precision at 860 samples/second 
+over I2C. The chip can be configured as 4 single-ended input channels, or two differential channels. As a nice bonus, it even includes a programmable gain amplifier, up to x16, to help boost up smaller single/differential signals to the full range. We like this ADC because it can run from 2V to 5V power/logic, can measure a large range of signals and its super easy to use. It is a great general purpose 12 bit converter.See [ADS1015](https://www.adafruit.com/product/1083) [ADS1115](https://www.adafruit.com/product/1085)for more information about the hardware.
 
-16-Channel 12-bit PWM/Servo Driver – I2C interface – PCA9685 Module lets you add more IOs to your microcontroller boards. The Module has chainable I2C interface meaning for even more IOs more boards can be daisy chained. Its and excellent product for Robots that require lots of Servo motors to control using single microcontroller.See [product page link](https://www.adafruit.com/product/815) for more information about the hardware.
-
-![alt text](https://cdn-shop.adafruit.com/970x728/815-06.jpg)
+![alt text](https://cdn-shop.adafruit.com/970x728/1083-00.jpg)
+![alt text](https://cdn-shop.adafruit.com/970x728/1085-02.jpg)
 ### Features
 
-* It is 5V compliant, which means you can control it from a 3.3V microcontroller and still safely drive up to 6V outputs (this is good for when you want to control white or blue LEDs with 3.4+ forward voltages)
-* 6 address select pins so you can wire up to 62 of these on a single i2c bus, a total of 992 outputs – that’s a lot of servos or LEDs
-* Adjustable frequency PWM up to about 1.6 KHz
-* 12-bit resolution for each output – for servos, that means about 4us resolution at 60Hz update rate
-* Configurable push-pull or open-drain output
-* Output enable pin to quickly disable all the outputs
-* Reverse polarity protection on the terminal block input
-* Power-good LED
-* 3 pin connectors in groups of 4 so you can plug in 16 servos at once
-* A big capacitor on the V+ line
-* 220 ohm series resistors on all the output lines to protect them, and to make driving LEDs trivial
-* IO expander chip: PCA9685PW
-* Operating Voltage: 2.3V – 5.5V
-* Solder jumpers for the 6 address select pins
-* I2C 7-bit address Range: between 0x40-0x7F, selectable with jumpers
+* Wide supply range: 2.0V to 5.5V
+* Low current consumption: Continuous Mode: Only 150uA Single-Shot Mode: Auto Shut-Down
+* Programmable data rate: 8SPS to 860SPS
+* Internal Low-drift voltage reference
+* Internal oscillator
+* Internal PGA
+* I2C interface: Pin-Selectable Addresses
+* Four Single-ended or two differential inputs
+* Programmable comparator
+* This board/chip uses I2C 7-bit addresses between 0x48-0x4B, selectable with jumpers
 
 ### Slave address
-* Board 0: Address = 0x40 Offset = binary 00000 (no jumpers required) 
-* Board 1: Address = 0x41 Offset = binary 00001 (bridge A0 ) 
-* Board 2: Address = 0x42 Offset = binary 00010 (bridge A1) 
-* Board 3: Address = 0x43 Offset = binary 00011 (bridge A0 & A1) 
-* ...
+* Address pin connected to GND = 0x48 Offset = binary 1001000
+* Address pin connected to VDD = 0x49 Offset = binary 1001001
+* Address pin connected to SDA = 0x4A Offset = binary 1001010
+* Address pin connected to SCL = 0x4B Offset = binary 1001011
+
