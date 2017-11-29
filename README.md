@@ -1,5 +1,5 @@
 
-Arduino Adafruit PWM servo library for Mongoose OS
+Arduino Adafruit - 16-Channel 12-bit PWM/Servo Driver - I2C interface - PCA9685 library for Mongoose OS
 =========
 
 Tested and works on esp8266/esp32
