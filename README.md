@@ -6,6 +6,7 @@ Tested and works on esp8266/esp32
 
 ## Description
 Analog-to-digital converter or when you want a higher-precision ADC, 
+
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
