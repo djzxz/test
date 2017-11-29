@@ -12,7 +12,7 @@ Analog-to-digital converter or when you want a higher-precision ADC.
 | ADS1015   | 12-bit    | 3300        |
 | ADS1115   | 16-bit    | 860         |
 
-The chip can be configured as 4 single-ended input channels, or two differential channels. As a nice bonus, it even includes a programmable gain amplifier, up to x16, to help boost up smaller single/differential signals to the full range.For more info see [ADS1015](https://www.adafruit.com/product/1083) [ADS1115](https://www.adafruit.com/product/1085)for more information about the hardware.   
+The chip can be configured as 4 single-ended input channels, or two differential channels. As a nice bonus, it even includes a programmable gain amplifier, up to x16, to help boost up smaller single/differential signals to the full range. See [ADS1015](https://www.adafruit.com/product/1083) [ADS1115](https://www.adafruit.com/product/1085) for more information about the hardware.   
 
 ![alt text](https://cdn-shop.adafruit.com/970x728/1083-00.jpg)
 ![alt text](https://cdn-shop.adafruit.com/970x728/1085-02.jpg)
