@@ -83,6 +83,7 @@ init.js, add:
 load('api_ads1015.js');
 ```
 [ (JavaScript) usage example](https://github.com/mongoose-os-apps/example-arduino-adafruit-ads1x15-js)
+
 main.c, add:
 ```
 #include "mgos_arduino_Adafruit_ADS1015.h"
