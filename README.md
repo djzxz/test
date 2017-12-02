@@ -23,14 +23,22 @@ RTC maintains seconds, minutes, hours, day, date, month, and year information. L
 
 mos.yml, add:
 ```
+config_schema:
+ - ["i2c.enable", true]
 libs:
-  - origin: https://github.com/mongoose-os-libs/arduino-ds3231
-  ```
+ - origin: https://github.com/mongoose-os-libs/arduino-ds3231
+ ```
 init.js, add:
 ```
 load('api_ds3231.js');
 ```
-main.c, add:
+[aaaaaaaaaaa](https://www.google.com)
+
+[eeeeeeeeeeeeeeeeee](https://www.google.com "Google's Homepage")
+
+[rrrrrrrrrrrrrrrrrrr][Arbitrary case-insensitive reference text]
+
+ggggggmain.c, add:
 ```
 #include "mgos_arduino_DS3231.h" 
 ```
@@ -70,8 +78,10 @@ The chip can be configured as 4 single-ended input channels, or two differential
 
 mos.yml, add:
 ```
+config_schema:
+ - ["i2c.enable", true]
 libs:
-  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-ads1x15
+ - origin: https://github.com/mongoose-os-libs/arduino-adafruit-ads1x15
   ```
 init.js, add:
 ```
@@ -121,8 +131,10 @@ Tested and works on esp8266/esp32
 
 mos.yml, add:
 ```
+config_schema:
+ - ["i2c.enable", true]
 libs:
-  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-pwm-servo
+ - origin: https://github.com/mongoose-os-libs/arduino-adafruit-pwm-servo
   ```
 init.js, add:
 ```
