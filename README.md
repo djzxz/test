@@ -32,13 +32,8 @@ init.js, add:
 ```
 load('api_ds3231.js');
 ```
-[aaaaaaaaaaa](https://www.google.com)
+[ (JavaScript) usage example](https://github.com/mongoose-os-apps/example-arduino-ds3231-js)
 
-[eeeeeeeeeeeeeeeeee](https://www.google.com "Google's Homepage")
-
-[rrrrrrrrrrrrrrrrrrr][Arbitrary case-insensitive reference text]
-
-ggggggmain.c, add:
 ```
 #include "mgos_arduino_DS3231.h" 
 ```
@@ -87,6 +82,7 @@ init.js, add:
 ```
 load('api_ads1015.js');
 ```
+[ (JavaScript) usage example](https://github.com/mongoose-os-apps/example-arduino-adafruit-ads1x15-js)
 main.c, add:
 ```
 #include "mgos_arduino_Adafruit_ADS1015.h"
