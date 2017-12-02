@@ -24,16 +24,17 @@ RTC maintains seconds, minutes, hours, day, date, month, and year information. L
 mos.yml, add:
 ```
 libs:
-  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-pwm-servo
+  - origin: https://github.com/mongoose-os-libs/arduino-ds3231
   ```
 init.js, add:
 ```
-load('api_pwm_servo.js');
+load('api_ds3231.js');
 ```
 main.c, add:
 ```
-#include "mgos_arduino_PWMServoDriver.h"
+#include "mgos_arduino_DS3231.h" 
 ```
+
 
 Arduino Adafruit ADS1015 12-BiT/ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier library for Mongoose OS
 =========
@@ -64,6 +65,22 @@ The chip can be configured as 4 single-ended input channels, or two differential
 * Four Single-ended or two differential inputs
 * Programmable comparator
 * This board/chip uses I2C 7-bit addresses between 0x48-0x4B, selectable with jumpers
+
+### Usage
+
+mos.yml, add:
+```
+libs:
+  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-ads1x15
+  ```
+init.js, add:
+```
+load('api_ads1015.js');
+```
+main.c, add:
+```
+#include "mgos_arduino_Adafruit_ADS1015.h"
+```
 
 ### Slave address
 * Address pin connected to GND = 0x48 Offset = binary 1001000
@@ -99,6 +116,22 @@ Tested and works on esp8266/esp32
 * Operating Voltage: 2.3V – 5.5V
 * Solder jumpers for the 6 address select pins
 * I2C 7-bit address Range: between 0x40-0x7F, selectable with jumpers
+
+### Usage
+
+mos.yml, add:
+```
+libs:
+  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-pwm-servo
+  ```
+init.js, add:
+```
+load('api_pwm_servo.js');
+```
+main.c, add:
+```
+#include "mgos_arduino_PWMServoDriver.h"
+```
 
 ### Slave address
 * Board 0: Address = 0x40 Offset = binary 00000 (no jumpers required) 
