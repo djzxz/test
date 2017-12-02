@@ -19,6 +19,21 @@ RTC maintains seconds, minutes, hours, day, date, month, and year information. L
 * Programmable square-wave output
 * Real time clock generator seconds, minutes, hours, day, date, month and year timing and provide valid until the year 2100 leap year compensation
 
+### Usage
+
+mos.yml, add:
+```
+libs:
+  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-pwm-servo
+  ```
+init.js, add:
+```
+load('api_pwm_servo.js');
+```
+main.c, add:
+```
+#include "mgos_arduino_PWMServoDriver.h"
+```
 
 Arduino Adafruit ADS1015 12-BiT/ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier library for Mongoose OS
 =========
